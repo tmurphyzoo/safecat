@@ -126,10 +126,15 @@
     <div class="content-block">
         <div class="container">
             <div id="cf-about-us-header-bloc"></div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/C3XCJQf1IOw?si=nMytFl-CU-aG6LAZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 0 auto;display: block;"></iframe>
         </div>
     </div>
     
+    <div class="content-block">
+        <div class="container">
+            <div id="cf-about-us-video"></div>
+        </div>
+    </div>
+
     <div class="content-block">
     <div class="container">
               <div id="cf-about-us-featured-1"></div>
@@ -1292,26 +1297,19 @@
 
     </script> 
   <script id="partial-video-player" type="text/x-handlebars-template">
-      <div class="{{class-list defaults='video-player' extras=classes}}">
-  <div class="video-player__outer embed-responsive embed-responsive-16by9">
-    <div class="video-player__inner embed-responsive-item">
-      <svg class="video-player__play-button mx-auto text-white" viewBox="0 0 80 80">
-        <use xlink:href="#play"></use>
-      </svg>
+      <div class="{{class-list defaults='video-player' extras=classes}}" style="max-width:750px;">
 
-      <div class="video-player__iframe" id="{{rand}}" data-video-id="{{fields.youTubeId}}"></div>
-    </div>
-  </div>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{fields.youTubeId}}?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          </div>
 
-  <img class="skip" data-src="{{fields.thumbnail.fields.file.url}}" src="{{fields.thumbnail.fields.file.url}}" alt="{{fields.thumbnail.fields.title}}">
-
-  <div class="video-player__info">
-    <p>
-      <strong>{{fields.title}}</strong> <br>
-      {{fields.description}}
-    </p>
-  </div>
-</div>
+    <!--<div class="video-player__info">
+        <p>
+            <strong>{{fields.title}}</strong> <br>
+            {{fields.description}}
+        </p>
+    </div>-->
+      </div>
 
     </script> 
   <script id="partial-modal" type="text/x-handlebars-template">

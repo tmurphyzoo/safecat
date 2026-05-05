@@ -3923,7 +3923,7 @@ $(function () {
   renderPartial('1ATdC87YmAyEyWA8kwc842', '#cf-about-us-featured-2');
   renderPartial('6lmZAfCq3YUEA6UCQKmyoE', '#cf-about-us-shared-header-bloc');
   renderPartial('7J6TBxk5TGMWyGUWCoCs0g', '#cf-about-us-split-1');
-  renderPartial('6GX7iBXVS0CoM6COg4yuug', '#cf-about-us-video');
+  renderPartial('4V8FIHRp07VM6ddpq8h3i2', '#cf-about-us-video');
   renderPartial('P2qLoV1PK6KIMsWSgMGOS', '#cf-about-us-campaign-collaborators');
   renderPartial('7J6TBxk5TGMWyGUWCoCs0g', '#cf-about-us-split-2');
   renderPartial('OMeDRNcJiwMCIEiqUke2w', '#cf-about-us-campaign-supporters');
@@ -3952,6 +3952,7 @@ $(function () {
   renderPartial('6ziyzw72UgEw8G8OMuu4we', '#cf-expert-advice-header-bloc-3');
   renderPartial('6QWXrdDbC8QeYUU8WmkWYk', '#cf-expert-advice-content-list-my-current-cat');
   renderPartial('1NEtTuNn9KuSSEc284uK2S', '#cf-expert-advice-related-content');
+  renderPartial('4wAhUGr942oF5FtVRxNSdL', '#cf-expert-advice-advice-featured-2');
 
   // Subscription
   renderPartial('6oNtqJIWHY4Uoa8E4QgaMM', '#cf-form-hs');
@@ -30780,7 +30781,6 @@ module.exports = function (options) {
 
     var renderedCode = hljs.highlight(language, code).value;
     var output = '<div class="code-example"><pre><code class="${language}">${renderedCode}</code></pre></div>';
-
     return output;
   };
 
